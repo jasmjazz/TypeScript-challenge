@@ -7,3 +7,7 @@
 
 // 請在下方寫下你的程式碼
 
+export async function fetchData(url: string) {
+  const data = await fetch(url);
+  return data.json();
+}
